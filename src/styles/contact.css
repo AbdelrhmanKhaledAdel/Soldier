@@ -1,0 +1,141 @@
+.contact_us .title h2 {
+  padding-top: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+.contact_us .items {
+  padding: 24px 0;
+}
+.contact_us .items .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+.contact_us .items .item {
+  padding: 12px;
+  border: 1px solid #8080806e;
+}
+.contact_us .item .icon svg{
+  color: var(--main-color);
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+.contact_us .item .content {
+  display: flex;
+  flex-direction: column;
+}
+.contact_us .item span {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.contact_us .item span span {
+  font-weight: 700;
+}
+.contact_us .item button {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.contact_us .item .content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact_us .item .content li {
+  color: var(--main-color);
+  cursor: pointer;
+  transition: .3s;
+}
+.contact_us .item .content li:hover {
+  text-decoration: underline;
+}
+.contact_us .item h5 {
+  font-size: 15px;
+}
+.contact_us .item p {
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 10px !important;
+}
+body.dark .contact_us a {
+  color: #0dcaf0;
+}
+.contact_us .contact .container {
+  width: 900px;
+}
+.contact_us .highlighted .highlighted_content {
+  margin: 2rem 0;
+  padding: 10px 15px;
+  background: #8fae4d65;
+  text-align: center;
+}
+.contact_us .highlighted_content span {
+ padding: 0 10px;
+}
+.contact_us .highlighted_content span span {
+  color: gray;
+}
+.contact_us .highlighted p {
+  margin-bottom: 25px !important;
+  font-size: 15px;
+  font-weight: 500;
+}
+.contact_us form {
+  padding: 3rem 0;
+}
+.contact_us form .div_form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.contact_us form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact_us form label {
+  font-weight: 500;
+}
+.contact_us form input, .contact_us form textarea {
+  padding: 10px 15px;
+  border: 1px solid #80808061;
+  outline: none;
+  background: var(--background-tow);
+  border-radius: 4px;
+}
+.contact_us form textarea {
+  height: 150px;
+}
+.contact_us form input::placeholder, .contact_us form textarea::placeholder {
+  color: gray;
+}
+.contact_us form button {
+  width: 100%;
+}
+.contact_us form .MuiSelect-select {
+  padding: 4px 30px !important;
+}
+
+@media (max-width: 767px) {
+  .contact_us .highlighted .highlighted_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact_us .highlighted_content span {
+    border: 0 !important;
+    text-align: start;
+  }
+}
+@media (max-width: 568px) {
+  .contact_us .contact .container {
+    width: fit-content !important;
+  }
+  .contact_us form .div_form {
+    flex-direction: column;
+  }
+}

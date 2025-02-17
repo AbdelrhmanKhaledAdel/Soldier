@@ -1,0 +1,170 @@
+/* History of Weapons */
+.right_weapon {
+  padding: 80px 0;
+
+}
+.right_weapon .container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.right_weapon h2.title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--main-color-hover);
+}
+.right_weapon .item {
+  margin-bottom: 15px;
+}
+.right_weapon .item p {
+  color: gray;
+}
+.right_weapon img {
+  width: 100%;
+  border-radius: 15px;
+  border: 4px solid var(--main-color-hover);
+}
+@media (max-width: 991px) {
+  .right_weapon .container {
+    flex-direction: column;
+  }
+}
+
+/* Types of Weapons */
+
+.types_weapons {
+  background-color: var(--background-tow);
+  padding: 80px 0;
+}
+.types_weapons h2.title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--main-color-hover);
+  text-align: center;
+}
+.types_weapons .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+.types_weapons .items .item {
+  background: var(--background);
+  border-radius: 8px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.3s;
+}
+.types_weapons .items .item:hover {
+  box-shadow: 0px 1px 20px 0px #8fae4d;
+}
+.types_weapons .item h4 {
+  margin: 0 !important;
+  font-weight: 700;
+}
+.types_weapons .item p {
+  color: gray;
+  line-height: 30px;
+}
+.types_weapons .item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 576px) {
+  .types_weapons {
+    padding: 40px 0;
+  }
+  .types_weapons .items {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* How to Choose the Right Weapon */
+.choose_weapons {
+  padding: 80px 0;
+}
+.choose_weapons .img img {
+  width: 95%;
+  max-width: 600px;
+  border-radius: 25px;
+}
+.choose_weapons h3.title {
+  font-weight: 700;
+  color: var(--main-color-hover);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.choose_weapons h3.title + p {
+  color: gray;
+  margin-bottom: 30px !important;
+  text-align: center;
+}
+.choose_weapons .items .item {
+  margin-bottom: 30px;
+}
+.choose_weapons .item h4 {
+  margin-bottom: 15px;
+}
+.choose_weapons .item p {
+  color: gray;
+  line-height: 25px;
+  margin-bottom: 10px !important;
+}
+
+
+/* Shooting Tips for Beginners */
+.beginners {
+  background-color: var(--background-tow);
+  padding: 80px 0;
+}
+.beginners h3.title {
+  font-weight: 700;
+  color: var(--main-color-hover);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.beginners h3.title + p {
+  color: gray;
+  margin-bottom: 30px !important;
+  text-align: center;
+}
+
+.beginners .beginners_one, .beginners .beginners_two {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.beginners .beginners_one {
+  flex-direction: row-reverse;
+}
+.beginners img {
+  width: 100%;
+  max-width: 550px;
+  height: fit-content;
+  border-radius: 25px;
+  border: 6px solid var(--main-color-hover);
+  transition: 0.3s;
+}
+.beginners img:hover {
+  box-shadow: 1px 1px 8px var(--main-color);
+}
+.beginners .items .item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+.beginners .item p {
+  font-size: 15px;
+  color: gray;
+}
+
+@media (max-width: 991px) {
+  .beginners .beginners_one, .beginners .beginners_two {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .beginners img {
+    max-width: fit-content;
+  }
+}

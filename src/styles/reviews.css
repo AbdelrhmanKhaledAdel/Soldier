@@ -1,0 +1,301 @@
+/* Analysis of the Latest Handguns, Rifles, and Sniper Rifles – Features and Drawbacks */
+.analysis {
+  padding: 80px 0;
+}
+.analysis .title {
+  margin-bottom: 30px;
+  text-align:  center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.analysis .title h3 {
+  width: 70%;
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.analysis .title p {
+  color: gray;
+  width: 70%;
+}
+.analysis .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+.analysis .items .item {
+  background: var(--background-tow);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  gap: 17px;
+  transition: .3s;
+}
+.analysis .items .item:hover {
+  box-shadow: 1px 1px 7px 7px #0000003b;
+}
+.analysis .item img {
+  width: 323px;
+}
+.analysis .item h3 {
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.analysis .item .item_content div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.analysis .item h5 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.analysis .item h5 svg {
+  background: var(--main-color);
+  border-radius: 4px;
+  color: #fff;
+}
+.analysis .item h5 svg.false {
+  background: red;
+}
+.analysis .item .item_content div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px !important;
+}
+.analysis .item .item_content div li {
+  text-align: start;
+  color: gray;
+}
+.analysis .item div li svg {
+  color: var(--main-color);
+}
+/* Comparison: Glock 19 vs. SIG Sauer P320 */
+.comparison {
+  background: var(--background-tow);
+  padding: 80px 0;
+}
+.comparison .general {
+  overflow-x: auto;
+}
+.comparison .general h3 {
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+tbody, td, tfoot, th, thead, tr {
+  border: 1px solid #eee !important;
+}
+body.dark tbody,body.dark td,body.dark tfoot,body.dark th,body.dark thead,body.dark tr{
+  border-color: #eeeeee38 !important;
+}
+.comparison .general table {
+  min-width: 1000px;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 15px;
+}
+.comparison .general table td {
+  padding: 15px;
+}
+
+.comparison .general table thead td {
+  background-color: var(--background);
+  font-weight: bold;
+}
+.comparison .features {
+  padding: 4rem 0;
+  border-top: 1px solid rgba(128, 128, 128, 0.384);
+}
+.comparison .features h3 {
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.comparison .features .items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.comparison .features h5 {
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.comparison .features .item_content p {
+  color: gray;
+  font-weight: 400;
+  margin-bottom: 15px !important;
+}
+.comparison .features .item_content svg {
+  color: var(--main-color);
+}
+
+.comparison .reliable {
+  margin-bottom: 4rem;
+}
+.comparison .reliable h3 {
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.comparison .reliable .items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.comparison .reliable .item h5 {
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.comparison .reliable .item h5 svg {
+  background: var(--main-color);
+  border-radius: 4px;
+  color: #fff;
+  margin-right: 15px;
+}
+.comparison .reliable .item h5 svg.false {
+  background: red;
+}
+.comparison .reliable .item_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.comparison .reliable .item_content p {
+  color: gray;
+}
+.comparison .final {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.comparison .final h3 {
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.comparison .final h5 {
+  font-weight: 700;
+}
+.comparison .final p {
+  color: gray;
+}
+.testing {
+  padding: 80px 0;
+} 
+.testing .container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.testing .title h5 {
+  color: var(--main-color);
+  font-weight: 700;
+}
+.testing .title p {
+  color: gray;
+}
+.testing h3 {
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.testing .items .item:not(:last-of-type){
+  margin-bottom: 20px;
+}
+.testing .item h4 {
+  color: var(--main-color);
+  font-weight: 700;
+}
+.testing .item div {
+  margin-bottom: 15px;
+}
+.testing div h5 {
+  font-weight: 700;
+}
+.testing .advantages h5 svg {
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 4px;
+}
+.testing .item div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.testing .item div li {
+  color: gray;
+}
+.testing .disadvantages h5 svg {
+  background: red;
+  color: #fff;
+  border-radius: 4px;
+}
+.testing .item p {
+  color: gray;
+}
+.testing .item p span {
+  color: var(--color);
+  font-weight: 700;
+}
+.testing .performance {
+  overflow-x: auto;
+}
+
+.testing .performance h3 {
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.testing tbody,.testing td,.testing tfoot,.testing th,.testing thead,.testing tr {
+  border: 1px solid #888585 !important;
+}
+body.dark tbody,body.dark td,body.dark tfoot,body.dark th,body.dark thead,body.dark tr{
+  border-color: #eeeeee38 !important;
+}
+.testing .performance table {
+  min-width: 1000px;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 15px;
+}
+.testing .performance table td {
+  padding: 15px;
+}
+
+.testing .performance table thead td {
+  background-color: var(--background);
+  font-weight: bold;
+}
+.testing .conclusion p {
+  color: gray;
+}
+.testing.widely {
+  background: var(--background-tow);
+}
+
+
+@media (max-width: 567px) {
+  .analysis .title h3, .analysis .title p {
+    width: 100%;
+  }
+  .comparison .final h5{
+    font-size: 1.2rem;
+  }
+}

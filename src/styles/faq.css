@@ -1,0 +1,91 @@
+.faq {
+    padding: 80px 0;
+    position: relative;
+}
+.faq header {
+    align-items: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.faq header h5 {
+    font-size: 1.1rem;
+    background: #8fae4d51;
+    width: fit-content;
+    padding: 6px 29px;
+    color: var(--main-color-hover);
+    border-radius: 25px;
+    font-weight: 600;
+}
+.faq header h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+.faq header p {
+    width: 50%;
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+}
+.faq .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 16px;
+}
+.faq .item head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: var(--main-color);
+    padding: 10px 15px;
+}
+.faq .item h5 {
+    font-size: 15px;
+    color: #fff;
+    margin: 0 !important;
+}
+.faq .item p {
+    font-size: 14px;
+    color: gray;
+    padding: 10px 15px;
+    background: var(--background-tow);
+    transition: 0.3s;
+    display: none;
+    opacity: 0;
+}
+.faq .item.active p {
+    display: block;
+    opacity: 1;
+}
+.faq .item.active .add {
+    display: none;
+}
+.faq .item.active .remove {
+    display: block;
+}
+.faq .item .remove {
+    display: none;
+}
+.faq .item .add {
+    display: block;
+}
+.faq .item head div {
+    background: var(--main-color-hover);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 567px) {
+    .faq header h1 {
+        font-size: 1.3rem;
+    }
+    .faq header p {
+        width: 100%;
+    }
+    .faq .container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}

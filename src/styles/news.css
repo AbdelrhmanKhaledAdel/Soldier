@@ -1,0 +1,301 @@
+/* Landing Page */
+.landing_page {
+  padding-top: 80px;
+  overflow: hidden;
+}
+.landing_page .container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+}
+.landing_page .title {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.landing_page .title h2 {
+  margin: 0;
+  font-weight: 700;
+  color: var(--main-color-hover);
+}
+.landing_page .title p {
+  color: gray;
+  width: 75%;
+}
+.landing_page .content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 60px;
+}
+.landing_page .content .item {
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.landing_page .content .item p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.landing_page .content .item img {
+  width: 50px;
+  height: 50px;
+}
+.landing_page .image img {
+  position: relative;
+  bottom: -7px;
+}
+
+@media (max-width: 1200px) {
+  .landing_page .container {
+    flex-direction: column;
+  }
+  .landing_page .title p {
+    width: 100%;
+  }
+  .landing_page .content {
+    justify-content: center;
+  }
+  .landing_page .image img {
+    transform: translateX(50%);
+  }
+  .landing_page .image img.ar {
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 991px) {
+  .landing_page .image img {
+    transform: translateX(18%);
+  }
+  .landing_page .image img.ar {
+    transform: translateX(-27%);
+  }
+}
+@media (max-width: 767px) {
+  .landing_page .image img {
+    transform: translateX(0%) !important;
+  }
+}
+@media (max-width: 568px) {
+  .landing_page .image img {
+    width: 100%;
+  }
+}
+/* Legislation */
+.legislation {
+  padding: 80px 0;
+  background: var(--background-tow);
+}
+.legislation .page p ,.legislation .page h3.title {
+  text-align: center;
+}
+.legislation .page h3.title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--main-color-hover);
+}
+.legislation .page p {
+  color: gray;
+  margin-bottom: 15px !important;
+}
+
+.legislation .cards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+.legislation .item img {
+  width: 300px;
+}
+.legislation .cards .item {
+  width: 300px;
+  transition: 0.5s cubic-bezier(0, 0, 1, 1);
+  cursor: pointer;
+}
+
+/* Video */
+.video {
+  position: relative;
+}
+.video::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 99.5%;
+  background-color: rgb(0 0 0 / 40%);
+}
+.video video {
+  width: 100%;
+}
+.video .text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  background-color: #558b2f8b;
+  color: #fff;
+}
+.video .text h2 {
+  margin: 0 0 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Weapon Reviews */
+
+.weapon {
+  padding: 80px 0;
+}
+.weapon h2.title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--main-color-hover);
+  text-align: center;
+}
+.weapon .page_weapon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.weapon .page_weapon .content_weapon {
+  width: 65%;
+}
+.weapon .page_weapon p {
+  color: gray;
+  margin-bottom: 15px !important;
+}
+.weapon .page_weapon img {
+  border: 6px solid var(--main-color-hover);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.weapon .page_weapon img:hover {
+  box-shadow: 1px 3px 20px 3px var(--main-color-hover);
+}
+/* Interviews with experts */
+.interviews {
+  padding: 80px 0;
+  background: var(--background-tow);
+}
+.interviews h2.title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--main-color-hover);
+  text-align: center;
+}
+.interviews .page_interviews {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.interviews .page_interviews .content_interviews {
+  width: 65%;
+  text-align: center;
+}
+.interviews .page_interviews p {
+  color: gray;
+  margin-bottom: 15px !important;
+}
+.interviews .page_interviews .img {
+  display: flex;
+  flex-direction: row-reverse
+}
+.interviews .img img.img_page {
+  border: 6px solid var(--main-color-hover);
+  border-radius: 30px;
+}
+
+/* Special Reports */
+.special {
+  padding: 80px 0;
+}
+.special h2.title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--main-color-hover);
+  text-align: center;
+}
+.special .special_page_one, .special .special_page_two {
+  display: flex;
+  gap: 20px;
+}
+.special .special_page_two {
+  margin-top: 30px;
+  flex-direction: row-reverse;
+}
+.special .special_page_one p, .special .special_page_two p {
+  line-height: 30px;
+  color: gray;
+}
+.special .special_page_one img:hover, .special .special_page_two img:hover {
+  box-shadow: 1px 3px 20px 3px var(--main-color-hover);
+}
+
+/* Security and Safety */
+.security {
+  background: var(--background-tow);
+  padding: 80px 0;
+}
+.security .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.security h2.title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--main-color-hover);
+}
+.security p {
+  color: gray;
+  margin-bottom: 10px !important;
+  font-size: 16px;
+}
+.security img:hover {
+  box-shadow: 1px 3px 20px 3px var(--main-color-hover);
+}
+
+@media (max-width: 991px) {
+  .weapon .page_weapon {
+    flex-direction: column-reverse;
+  }
+  .interviews .page_interviews {
+    flex-direction: column;
+    align-items: center;
+  }
+  .special .special_page_one, .special .special_page_two {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .security .container {
+    flex-direction: column;
+  }
+  .security img {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  .legislation .cards {
+    flex-direction: column;
+  }
+  .legislation .item img,.legislation .cards .item {
+    width: 100%;
+  }
+  .weapon .page_weapon .content_weapon, .interviews .page_interviews .content_interviews {
+    width: 100%;
+  }
+}
+@media (max-width: 568px) {
+  .special img {
+    width: 100% !important;
+  }
+}

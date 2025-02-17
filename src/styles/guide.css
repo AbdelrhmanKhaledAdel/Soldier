@@ -1,0 +1,232 @@
+/* Guide to Choosing the Right Firearm */
+.guide .firearm_guide {
+  padding: 80px 0;
+}
+.guide .firearm_guide .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guide .firearm_guide img {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 4px solid var(--main-color-hover);
+  transition: .3s;
+  cursor: pointer;
+}
+.guide .firearm_guide img:hover {
+  box-shadow: 1px 1px 20px 4px var(--main-color-hover);
+}
+.guide .firearm_guide .firearm_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.guide .firearm_content .item h3.title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--main-color-hover);
+}
+.guide .firearm_content .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.guide .firearm_content li {
+  display: flex;
+  gap: 10px;
+  color: gray;
+}
+.guide .firearm_content li svg {
+  background: var(--main-color);
+  border-radius: 4px;
+  color: #fff;
+}
+/* Shooting Basics for Beginners – Tips on Holding a Firearm, Aiming, and Recoil Control */
+.guide .shooting {
+  padding: 80px 0;
+  background: var(--background-tow);
+}
+.guide .shooting .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.guide .shooting img {
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 4px solid var(--main-color-hover);
+}
+.guide .shooting .shooting_one ,.guide .shooting .shooting_two {
+  display: flex;
+
+  gap: 20px;
+}
+.guide .shooting .shooting_two {
+  flex-direction: row-reverse;
+}
+.guide .shooting .shooting_one .essential_content, .guide .shooting .shooting_two .essential_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.guide .shooting .shooting_one .essential_content {
+  width: 60%;
+}
+.guide .shooting .essential_content .item:not(:last-child) {
+  border-bottom: 1px solid gray;
+  padding-bottom: 23px;
+}
+.guide .shooting h2.title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: var(--main-color-hover);
+  font-size: 25px;
+}
+.guide .shooting p {
+  color: gray;
+  margin-bottom: 12px !important;
+}
+.guide .shooting ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.guide .shooting li {
+  color: gray;
+}
+.guide .shooting li h4 {
+  font-size: 20px;
+  color: var(--color);
+}
+.guide .shooting li svg {
+  background: var(--main-color);
+  border-radius: 4px;
+  color: #fff;
+  margin-right: 15px;
+}
+.guide .shooting li span {
+  color: var(--color);
+  font-weight: 600;
+}
+/* How to Clean and Maintain Firearms – A Detailed Guide to Proper Gun Care for Optimal Performance */
+.guide .detailed {
+  padding: 80px 0;
+}
+.guide .detailed .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.guide .detailed img {
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+}
+.detailed .detailed_content .item:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+.detailed .item h3.title {
+  margin: 15px 0;
+  font-weight: 700;
+  color: var(--main-color-hover);
+}
+.detailed .item p {
+  color: gray;
+  margin-bottom: 15px !important;
+  font-size: 17px;
+}
+.detailed .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.detailed .item li {
+  color: gray;
+}
+.detailed .item li h4 {
+  color: var(--color);
+  font-weight: 600;
+}
+.detailed .item svg {
+  color: var(--main-color);
+  margin-right: 10px;
+}
+.detailed .item svg.check {
+  background: var(--main-color);
+  border-radius: 4px;
+  color: #fff;
+}
+/* Firearm Safety Guidelines – Essential Safety Rules for Handling and Using Firearms */
+.guide .guidelines {
+  background: var(--background-tow);
+  padding: 80px 0;
+}
+.guide .guidelines .guideline_one,
+.guide .guidelines .guideline_two {
+  display: flex;
+  gap: 20px;
+}
+.guide .guidelines img {
+  width: 500px;
+  border-radius: 10px;
+  border: 4px solid var(--main-color-hover);
+}
+.guide .guidelines .guideline_one {
+  margin-bottom: 30px;
+  flex-direction: row-reverse;
+}
+.guide .guidelines .item:not(:last-child) {
+  border-bottom: 1px solid gray;
+  padding-bottom: 23px;
+}
+.guide .guidelines .item h4.title {
+  margin: 15px 0 10px;
+  font-weight: 700;
+  color: var(--main-color-hover);
+}
+.guide .guidelines .item p {
+  color: gray;
+}
+
+
+@media (max-width: 991px) {
+  .guide .firearm_guide img {
+    max-width: 100%;
+  }
+  .guide .shooting .shooting_one, .guide .shooting .shooting_two {
+    flex-direction: column;
+  }
+  .guide .guidelines .guideline_one,
+  .guide .guidelines .guideline_two {
+    flex-direction: column;
+  }
+  .guide .shooting .shooting_one .essential_content {
+    width: 100%;
+  }
+  .guide .shooting img {
+    max-width: 100%;
+  }
+  .guide .guidelines img {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .guide .firearm_content .item h3.title {
+    font-size: 19px;
+  }
+  .guide .shooting h2.title {
+    font-size: 19px;
+  }
+  .guide .shooting li h4 {
+    font-size: 17px;
+  }
+}

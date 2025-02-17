@@ -1,0 +1,33 @@
+.brands {
+    padding: 80px 0px;
+}
+.swiper-pagination {
+    margin-top: 20px;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 #00000024, 0 3px 1px -2px #00000033, 0 1px 5px 0 #0000001f;
+    transition: 0.4s;
+    background-color: transparent;
+    border: 1px solid gray;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    width: 18px !important;
+    height: 18px !important;
+    background: var(--main-color) !important;
+    border: none !important;
+}
+.brands .swiper-slide {
+    background: var(--background-tow);
+    height: 100px;
+    padding: 10px 20px;
+    margin: 0px 7px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}

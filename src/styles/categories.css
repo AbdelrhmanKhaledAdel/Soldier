@@ -1,0 +1,90 @@
+.categories_nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+    background: #8fae4d4d;
+    padding: 10px 15px;
+    margin-top: 25px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px 0 rgb(99 100 102 / 20%);
+}
+
+.categories_nav .categorie_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    background: var(--background-tow);
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px 0 rgb(99 100 102 / 20%);
+    padding: 10px;
+    height: fit-content;
+}
+
+.categories_nav .categorie_item img {
+    width: 120px;
+    height: 80px;
+}
+.categories_nav .categorie_item span {
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+.categories_nav .categorie_item:hover span {
+    color: var(--main-color);
+}
+
+.categories_content {
+    margin-top: 80px;
+    text-align: center;
+}
+.categories_content h2 {
+    font-size: 25px;
+}
+.categories_content .categories_cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.categories_card {
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 6px;
+}
+.categories_card img {
+    width: 300px;
+}
+.categories_cards .card_item {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .3s;
+    text-align: left;
+}
+
+.categories_cards .card_item:hover {
+    box-shadow: 0px 6px 12px 0px rgba(46, 46, 48, 0.46);
+}
+.categories_cards .card_item .card_item-img {
+    transition: .3s;
+}
+.categories_cards .card_item:hover .card_item-img {
+    transform: scale(0.8);
+}
+.categories_cards .card_item .price p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 !important;
+}
+.categories_cards .card_item .price p span {
+    font-size: 21px !important;
+}

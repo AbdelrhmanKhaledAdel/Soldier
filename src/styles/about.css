@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&display=swap');
+
+.about .slider{
+  /* background-color: red; */
+  color: #eee;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: -70px;
+}
+.about .slider .list .item{
+  position: absolute;
+  inset: 0 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.about .slider .list .item .content{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  text-align: left;
+  gap: 80px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: Poppins;
+  text-shadow: 0 0 80px #000;
+}
+.about .slider .list .item .content h2{
+  font-size: 10em;
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 0.9em;
+  transform: translateY(-100%);
+  transition: transform 1s;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.about .slider .list .item .content p:last-child{
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding-bottom: 25px;
+}
+/* item default */
+.about .slider .list .item .image{
+  flex-shrink: 0;
+  width: var(--diameter);
+  height: var(--diameter);
+  background-image: var(--url);
+  background-size: var(--diameter) var(--diameter);
+  background-position: center;
+  border-radius: 50%;
+  transform: rotate(-60deg);
+  position: relative;
+  transition: 1s;
+}
+.about .slider .list .item .image::before, 
+.about .slider .list .item .image::after{
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  content: '';
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)  rotate(-120deg);
+  background-image: 
+  linear-gradient(to right, #0004, #0004),
+  var(--url);
+  background-size: var(--diameter) var(--diameter);
+  background-position: center;
+  transition: 1s;
+}
+.about .slider .list .item .image::after{
+  width: 30%;
+  height: 30%;
+  background-image: var(--url);
+  border: 3px solid #fff2;
+  transform: translate(-50%, -50%) rotate(-170deg);
+}
+
+/* default  */
+.about .slider .list .item .image{
+  filter: blur(30px);
+}
+
+.about .slider .list .item{
+  pointer-events: none;
+  opacity: 0;
+}
+/* item active */
+.about .slider .list .item.active{
+  pointer-events: auto;
+  opacity: 1;
+}
+.about .slider .item.active .image{
+  filter: blur(0px);
+  transform: rotate(0deg);
+}
+.about .slider .item.active .image::before,
+.about .slider .item.active .image::after
+{
+  transform: translate(-50%, -50%) rotate(0deg) ;
+}
+.about .slider .list .item.active .content h2{
+  transform: translateY(0);
+}
+
+/* item phía sau */
+.about .slider .list .item.active ~ .item{
+  opacity: 0;
+}
+.about .slider .item.active ~ .item .image{
+  transform: rotate(60deg);
+}
+.about .slider .item.active ~ .item .image::before
+{
+  transform: translate(-50%, -50%) rotate(120deg) ;
+}
+.about .slider .item.active ~ .item .image::after
+{
+  transform: translate(-50%, -50%) rotate(170deg) ;
+}
+.about .slider .list .item.active ~ .item .content h2{
+  transform: translateY(100%);
+}
+/* arrows */
+.about .arrows{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  width: min(1000px, 90vw);
+  display: flex;
+  justify-content: space-between;
+}
+.about .arrows button{
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .slider .list::after{
+  position: absolute;
+  content: '';
+  bottom: -7px;
+  width: min(694px, 100vw);
+  height: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../assets/all_images/abu_abaidah.png);
+  background-size: cover;
+  background-position: top;
+  pointer-events: none;
+  animation: showModel 1s ease-in-out 1 forwards;
+}
+@keyframes showModel{
+  from{
+      transform: translateX(-50%) scale(1.3) translateY(88px);
+  }
+}
+
+.about .arrows button.remove {
+  opacity: 0;
+  pointer-events: none;
+}
+@media all and (max-width: 1024px) {
+  .about .slider .list .item .content{
+      grid-template-columns: repeat(2, 300px);
+  }
+  .about .slider .list .item .content h2{
+      font-size: 8em;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .about .slider {
+    margin-top: -20px;
+  }
+  .about .slider .list .item .content{
+      grid-template-columns: 80%;
+      justify-content: center;
+      gap: 20px;
+      top: 70px;
+  }
+  .about .slider .list .item .content h2{
+      font-size: 4em;
+  }
+  .about .slider .list .item .content p{
+      font-size: small;
+  }
+}
+@media all and (max-width: 567px) {
+  .about .slider .list::after {
+    height: 70%;
+  }
+}
+
+.pagebuilder .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pagebuilder .item {
+  background: var(--background-tow);
+  border-radius: 10px;
+  transition: .3s;
+}
+.pagebuilder .item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .3s;
+  padding: 15px;
+}
+.pagebuilder .item.active .head {
+  border-bottom: 4px solid var(--main-color);
+}
+
+.pagebuilder .item .head h2 {
+  font-size: 20px;
+  transition: .3s;
+}
+.pagebuilder .item.active .head h2 {
+  color: var(--main-color);
+}
+.pagebuilder .item .head div {
+  cursor: pointer;
+}
+.pagebuilder .item .remove {
+  display: none;
+}
+.pagebuilder .item.active .remove {
+  display: flex;
+} 
+.pagebuilder .item.active .add {
+  display: none;
+} 
+.pagebuilder .item .content {
+  color: gray;
+  display: none;
+  flex-direction: column;
+  gap: 7px;
+  transition: .3s;
+  padding: 15px;
+}
+
+.pagebuilder .item.active .content {
+  display: flex;
+}
+
+
+
+

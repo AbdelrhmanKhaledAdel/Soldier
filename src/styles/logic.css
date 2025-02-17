@@ -1,0 +1,195 @@
+.logic_login_and_register {
+  padding: 80px 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  /* background: repeating-linear-gradient(45deg, #92c9b1, #92c9b1 20px, #b3e0d2 20px, #b3e0d2 40px); */
+}
+.logic_login_and_register::before {
+  content: "";
+  position: absolute;
+  background: var(--main-color);
+  width: 100%;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.logic_login_and_register form {
+  background: var(--background-tow);
+  padding: 30px 25px;
+  margin: 0px 10px;
+  border-radius: 12px;
+  max-width: 400px;
+  min-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logic_login_and_register form h1 {
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+.logic_login_and_register form ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+  margin-bottom: 2.7rem !important;
+  height: 2.7rem;
+}
+.logic_login_and_register form ul li {
+  position: relative;
+  height: 50px;
+}
+.logic_login_and_register form ul li .icon-logic {
+  border: 1px solid gray;
+  padding: 14px;
+  border-radius: 4px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s;
+}
+.logic_login_and_register form ul li span {
+  position: absolute;
+  border-radius: 4px;
+  background-color: var(--clr-icon);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: 0.3s;
+}
+.logic_login_and_register form .user_image {
+  position: relative;
+  width: fit-content;
+  align-self: center;
+  margin-bottom: 1.6rem;
+}
+.logic_login_and_register form .user_image img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--background);
+}
+.logic_login_and_register form .user_image .holder {
+  position: absolute;
+  bottom: -20px;
+  right: -6px;
+  width: 2rem;
+  height: 1.98rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--background);
+  cursor: pointer;
+}
+.logic_login_and_register form .user_image .holder input {
+  cursor: pointer;
+  padding: 2.5rem;
+  opacity: 0;
+  z-index: 5;
+  scale: 2;
+}
+.logic_login_and_register form .user_image .holder .icon_edit {
+  color: var(--color);
+  position: absolute;
+  z-index: 1;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.logic_login_and_register form ul li:hover .icon-logic {
+  transform: rotate(25deg) translate( 8px, -10px);
+}
+.logic_login_and_register form ul li:hover span {
+  transform: rotate(25deg) translate( 8px, -10px);
+}
+.logic_login_and_register form div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+}
+.logic_login_and_register form div label {
+  text-align: start;
+}
+.logic_login_and_register form div input {
+  border: 1px solid #7c8a972f;
+  outline: none;
+  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background: var(--background);
+  margin-bottom: 20px;
+  position: relative;
+  color: var(--color);
+}
+.logic_login_and_register form div span {
+  position: absolute;
+  top: 46%;
+  right: 12px;
+  cursor: pointer;
+}
+.logic_login_and_register form div span .off {
+  display: none;
+}
+.logic_login_and_register form div span.active .off {
+  display: flex;
+}
+.logic_login_and_register form div span.active .on {
+  display: none;
+}
+.logic_login_and_register form button {
+  text-align: center;
+  background: var(--main-color);
+  color: #fff;
+  width: 100%;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: .3s;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.logic_login_and_register form p.link_rigester {
+  margin-top: 15px !important;
+  color: gray;
+}
+.logic_login_and_register form p.link_rigester a {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+.logic_login_and_register form p.link_rigester a:hover {
+  color: var(--main-color-hover);
+}
+
+@media (max-width: 568px) {
+  .logic_login_and_register form {
+    max-width: 340px
+  }
+}
