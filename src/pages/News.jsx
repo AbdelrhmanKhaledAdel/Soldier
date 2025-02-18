@@ -96,11 +96,6 @@ const News = () => {
           </div>
         </Container>
       </div>
-      <div className="video">
-        <video autoPlay muted loop>
-          <source src={require('../assets/all_images/SVD Dragunov ( SVD-S Tigr ) Range day(720P_60FPS).mp4')} type='video/mp4' />
-        </video>
-      </div>
       <div className="weapon">
         <Container>
           <h2 className="title">{t("Weapon Reviews")}</h2>
